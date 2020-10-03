@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
 
-Things you may want to cover:
+- Ruby >= 2.6
+- Node >= 12.10
 
-* Ruby version
+## Getting started
 
-* System dependencies
+```bash
+git clone
+cd rails-shoelace-example
+bundle install && yarn install --check-files
+```
 
-* Configuration
+## Viewing the web page
 
-* Database creation
+In one terminal run:
 
-* Database initialization
+```bash
+./bin/webpack-dev-server
+```
 
-* How to run the test suite
+Then in another terminal run:
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+rails server
+```
 
-* Deployment instructions
+Then go to `localhost:3000` to view your Rails app and see Shoelace in
+action!
 
-* ...
+## Railsbyte
+
+This repo was created with the help of this Railsbyte.
+
+[https://railsbytes.com/templates/X8BsEb](https://railsbytes.com/templates/X8BsEb)

@@ -19,6 +19,6 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 setAssetPath(document.currentScript.src)
 
-# This will import all shoelace web components for convenience.
-# https://shoelace.style/getting-started/installation?id=using-webpack
+// This will import all shoelace web components for convenience.
+// https://shoelace.style/getting-started/installation?id=using-webpack
 defineCustomElements()
