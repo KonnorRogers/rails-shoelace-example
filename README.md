@@ -1,5 +1,7 @@
 # README
 
+This repository is an example of how to use [Shoelace](https://shoelace.style/) with Rails.
+
 ## Requirements
 
 - Ruby >= 2.6
