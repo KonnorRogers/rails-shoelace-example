@@ -1,3 +1,5 @@
+import '../stylesheets/application.scss'
+import { defineCustomElements, setAssetPath } from '@shoelace-style/shoelace'
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
@@ -15,3 +17,8 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+setAssetPath(document.currentScript.src)
+
+# This will import all shoelace web components for convenience.
+# https://shoelace.style/getting-started/installation?id=using-webpack
+defineCustomElements()
