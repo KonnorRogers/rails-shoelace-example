@@ -10,7 +10,7 @@ This repository is an example of how to use [Shoelace](https://shoelace.style/) 
 ## Getting started
 
 ```bash
-git clone
+git clone https://github.com/ParamagicDev/rails-shoelace-example
 cd rails-shoelace-example
 bundle install && yarn install --check-files
 ```
