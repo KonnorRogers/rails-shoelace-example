@@ -30,6 +30,7 @@ jobs:
 
     - name: Precompile assets
       env:
+        HONEYBADGER_API_KEY: ${{secrets.GITHUB_TOKEN}}
         GIT_COMMIT: ${{ git rev-parse HEAD }}
         ASSETS_URL: "/404"
       run: |
