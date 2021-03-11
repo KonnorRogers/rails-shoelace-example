@@ -31,7 +31,7 @@ jobs:
     - name: Precompile assets
       env:
         HONEYBADGER_API_KEY: ${{secrets.GITHUB_TOKEN}}
-        GIT_COMMIT: ${{ git rev-parse HEAD }}
+        GIT_COMMIT: ${{ github.sha }}
         ASSETS_URL: "/404"
       run: |
         bundle exec rails assets:precompile
