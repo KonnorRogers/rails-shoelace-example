@@ -8,7 +8,7 @@ environment.plugins.append(
   'HoneybadgerSourceMap',
   new HoneybadgerSourceMapPlugin({
     apiKey: process.env.HONEYBADGER_API_KEY,
-    // assetsUrl: process.env.ASSETS_URL,
+    assetsUrl: process.env.ASSETS_URL,
     silent: false,
     ignoreErrors: false,
     revision: revision
