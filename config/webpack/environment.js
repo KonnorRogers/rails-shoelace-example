@@ -1,6 +1,19 @@
 const { environment } = require('@rails/webpacker')
 const path = require('path')
 const CopyPlugin = require('copy-webpack-plugin')
+const HoneybadgerSourceMapPlugin = require('@honeybadger-io/webpack')
+const revision = process.env.GIT_COMMIT || 'master'
+
+environment.plugins.append(
+  'HoneybadgerSourceMap',
+  new HoneybadgerSourceMapPlugin({
+    apiKey: process.env.HONEYBADGER_API_KEY,
+    // assetsUrl: process.env.ASSETS_URL,
+    silent: false,
+    ignoreErrors: false,
+    revision: revision
+  })
+)
 
 environment.plugins.append(
   'CopyPlugin',
